@@ -18,4 +18,8 @@ public class DemoApplication {
         return "test str";
     }
 
+    @GetMapping("/hello")
+    public String hello(){
+        return "hello world";
+    }
 }
