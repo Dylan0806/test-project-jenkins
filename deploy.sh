@@ -26,3 +26,4 @@ killDemoProject
 cd target
 nohup java -jar demo-0.0.1-SNAPSHOT.jar > console.log &
 #tail -1000f console.log
+echo Springboot application deploy complete
