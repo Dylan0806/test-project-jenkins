@@ -20,6 +20,9 @@ killDemoProject()
 cd $PROJ_PATH/demo
 mvn clean package
 
+#调用上面构建的函数
+killDemoProject
+
 cd target
 nohup java -jar demo-0.0.1-SNAPSHOT.jar > console.log &
 tail -1000f console.log
